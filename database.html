@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Access student-created MoCoTutoring resources, materials, and videos."
+  >
+
+  <title>Database | MoCoTutoring</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        MoCo<span>Tutoring</span>
+      </a>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mission.html">Mission</a></li>
+        <li><a href="tutors.html">Tutors</a></li>
+        <li><a href="database.html">Database</a></li>
+        <li><a href="policies.html">Terms & Policies</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="database-page">
+    <section class="database-heading">
+      <h1>
+        Access helpful resources, videos, and materials that students have
+        created here!
+      </h1>
+
+      <p>
+        Access may be restricted to authorized MCPS Google accounts.
+      </p>
+    </section>
+
+    <section class="drive-shell">
+      <!--
+        Replace the URL below with the embeddable URL for your Google Drive
+        folder when it is ready.
+      -->
+
+      <iframe
+        src="https://drive.google.com"
+        title="MoCoTutoring Google Drive resources"
+        loading="lazy"
+        allowfullscreen
+      ></iframe>
+
+      <div class="drive-fallback">
+        <p>
+          If the folder does not appear, Google may be preventing the page
+          from loading inside the website.
+        </p>
+
+        <a
+          class="drive-link"
+          href="https://drive.google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open Google Drive in a new tab
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Resources are intended for authorized MCPS students.</p>
+  </footer>
+</body>
+</html>
