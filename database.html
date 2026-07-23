@@ -2,201 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta
     name="description"
-    content="Access student-created MoCoTutoring resources, videos, and materials."
+    content="Access student-created MoCoTutoring resources, materials, and videos."
   >
 
   <title>Database | MoCoTutoring</title>
 
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
-
-  <style>
-    .database-page {
-      min-height: calc(100vh - 76px);
-      background: #fff8ef;
-    }
-
-    .database-intro {
-      width: min(1100px, 90%);
-      margin: 0 auto;
-      padding: 70px 0 40px;
-      text-align: center;
-    }
-
-    .database-intro h1 {
-      margin: 0;
-      color: #0b1f3a;
-      font-size: clamp(2.4rem, 6vw, 4.8rem);
-      line-height: 1.08;
-    }
-
-    .database-intro p {
-      max-width: 760px;
-      margin: 22px auto 0;
-      color: #5f6672;
-      font-size: 1.2rem;
-    }
-
-    .database-container {
-      width: min(1180px, 92%);
-      margin: 0 auto;
-      padding-bottom: 70px;
-    }
-
-    .drive-card {
-      position: relative;
-      overflow: hidden;
-      min-height: 520px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 50px 30px;
-      border: 6px solid #0b1f3a;
-      border-radius: 26px;
-      background:
-        radial-gradient(
-          circle at 15% 20%,
-          rgba(198, 93, 36, 0.42),
-          transparent 30%
-        ),
-        radial-gradient(
-          circle at 85% 80%,
-          rgba(198, 93, 36, 0.28),
-          transparent 32%
-        ),
-        linear-gradient(
-          135deg,
-          #0b1f3a 0%,
-          #153a66 65%,
-          #09182c 100%
-        );
-      box-shadow: 0 22px 55px rgba(11, 31, 58, 0.25);
-      color: white;
-      text-align: center;
-    }
-
-    .drive-card::before {
-      content: "";
-      position: absolute;
-      width: 360px;
-      height: 360px;
-      top: -180px;
-      right: -120px;
-      border: 2px solid rgba(255, 255, 255, 0.12);
-      border-radius: 50%;
-    }
-
-    .drive-card::after {
-      content: "";
-      position: absolute;
-      width: 270px;
-      height: 270px;
-      bottom: -145px;
-      left: -90px;
-      border: 2px solid rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-    }
-
-    .drive-card-content {
-      position: relative;
-      z-index: 1;
-      max-width: 760px;
-    }
-
-    .folder-icon {
-      display: block;
-      margin-bottom: 20px;
-      font-size: 6rem;
-      line-height: 1;
-    }
-
-    .drive-card h2 {
-      margin: 0;
-      color: white;
-      font-size: clamp(2rem, 5vw, 3.8rem);
-      line-height: 1.1;
-    }
-
-    .drive-card p {
-      max-width: 650px;
-      margin: 22px auto 0;
-      color: rgba(255, 255, 255, 0.88);
-      font-size: 1.15rem;
-    }
-
-    .drive-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 32px;
-      padding: 15px 28px;
-      border: 2px solid #ffffff;
-      border-radius: 999px;
-      background: #c65d24;
-      color: white;
-      text-decoration: none;
-      font-size: 1.08rem;
-      font-weight: bold;
-      transition:
-        transform 180ms ease,
-        background 180ms ease,
-        box-shadow 180ms ease;
-    }
-
-    .drive-button:hover {
-      transform: translateY(-4px);
-      background: #9e4317;
-      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
-    }
-
-    .access-note {
-      max-width: 850px;
-      margin: 30px auto 0;
-      padding: 24px;
-      border-left: 6px solid #c65d24;
-      border-radius: 0 16px 16px 0;
-      background: white;
-      box-shadow: 0 12px 32px rgba(11, 31, 58, 0.12);
-    }
-
-    .access-note h3 {
-      margin: 0 0 8px;
-      color: #0b1f3a;
-      font-size: 1.4rem;
-    }
-
-    .access-note p {
-      margin: 0;
-      color: #5f6672;
-    }
-
-    @media (max-width: 700px) {
-      .database-intro {
-        padding-top: 50px;
-      }
-
-      .drive-card {
-        min-height: 450px;
-        padding: 40px 22px;
-      }
-
-      .folder-icon {
-        font-size: 4.5rem;
-      }
-
-      .drive-button {
-        width: 100%;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -216,85 +32,60 @@
       </button>
 
       <ul class="nav-links">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-
-        <li>
-          <a href="mission.html">Mission</a>
-        </li>
-
-        <li>
-          <a href="tutors.html">Tutors</a>
-        </li>
-
-        <li>
-          <a href="database.html">Database</a>
-        </li>
-
-        <li>
-          <a href="policies.html">Terms & Policies</a>
-        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mission.html">Mission</a></li>
+        <li><a href="tutors.html">Tutors</a></li>
+        <li><a href="database.html">Database</a></li>
+        <li><a href="policies.html">Terms & Policies</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="database-page">
-    <section class="database-intro">
-      <p class="kicker">Student Resource Library</p>
-
+    <section class="database-heading">
       <h1>
         Access helpful resources, videos, and materials that students have
         created here!
       </h1>
 
       <p>
-        Browse student-created explanations, notes, and videos designed to
-        support classes aligned with the MCPS curriculum.
+        Access may be restricted to authorized MCPS Google accounts.
       </p>
     </section>
 
-    <section class="database-container">
-      <div class="drive-card reveal">
-        <div class="drive-card-content">
-          <span class="folder-icon" aria-hidden="true">📁</span>
+    <section class="drive-shell">
+      <!--
+        Replace the URL below with the embeddable URL for your Google Drive
+        folder when it is ready.
+      -->
 
-          <h2>MoCoTutoring Resource Database</h2>
+      <iframe
+        src="https://drive.google.com/drive/folders/11gk8Oxm_LWQ_vdXvyvFcw1Df6w53loTB?usp=sharing"
+        title="MoCoTutoring Google Drive resources"
+        loading="lazy"
+        allowfullscreen
+      ></iframe>
 
-          <p>
-            Open the shared Google Drive folder to view the latest available
-            learning materials. Students may need to sign in using an
-            authorized MCPS Google account.
-          </p>
-
-          <a
-            class="drive-button"
-            href="https://drive.google.com/drive/folders/11gk8Oxm_LWQ_vdXvyvFcw1Df6w53loTB?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Open the Resource Folder →
-          </a>
-        </div>
-      </div>
-
-      <div class="access-note reveal">
-        <h3>Having trouble accessing the folder?</h3>
-
+      <div class="drive-fallback">
         <p>
-          Make sure you are signed into the correct MCPS Google account.
-          Access is controlled through the folder's Google Drive sharing
-          settings.
+          If the folder does not appear, Google may be preventing the page
+          from loading inside the website.
         </p>
+
+        <a
+          class="drive-link"
+          href="https://drive.google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open Google Drive in a new tab
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>
-      © <span class="current-year"></span> MoCoTutoring. Resources are
-      intended for authorized MCPS students.
-    </p>
+    <p>Resources are intended for authorized MCPS students.</p>
   </footer>
 </body>
 </html>
